@@ -23,11 +23,13 @@ contract mscoin_ico {
         _;
     }
 
+    // This function will allow user to see how much he invested in this ICO, in MScoins currency rate.
     // Getting the equity in mscoins of an investor
     function equity_in_mscoin(address investor) external view returns (uint){
        return equity_mscoins[investor];
     }
-
+    
+    // This function will allow user to see how much he invested in this ICO, in USD currency rate.
     // Getting the equity in usd of an investor 
     function equity_in_usd(address investor) external view returns (uint){
         return equity_usd[investor];
